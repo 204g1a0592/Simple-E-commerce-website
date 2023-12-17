@@ -1,0 +1,121 @@
+<html>
+    <head>
+        <title>
+            Registration
+        </title>
+        <style>
+            .header-2{
+        background-color: lightskyblue;
+        height: 75px;
+        }
+        </style>
+        <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script>
+             function validate(form)
+            {
+                var username=form.username.value;
+                var password=form.password.value;
+                var mail=form.mail.value;
+                var age=form.age.value;
+                var mobile=form.mymobile.value;
+                var address=form.add.value;
+                if(username.length===0)
+                {
+                    alert("You must have enter a valid Username");
+                    return false;
+                }
+                if(password.length===0)
+                {
+                    alert("You must have enter a valid password");
+                    return false;
+                }
+                if(mail.length===0)
+                {
+                    alert("You must enter a valid email");
+                    return false;
+                }
+                if(age.length===0)
+                {
+                    alert("You must enter age");
+                    return false;
+                }
+                if(mobile.length===0)
+                {
+                    alert("You must enter mobile number");
+                    return false;
+                }
+                if(address.length===0)
+                {
+                    alert("You must enter address");
+                    return false;
+                }
+            }
+        
+        </script>
+        <link rel="stylesheet" href="style.css">
+    </head>  
+    <body style="background: url(sho.jpg); background-size: cover;">
+        <header>
+            <div class="header-2">
+                <div id="menu" class="fas fa-bars" style="color: blanchedalmond;">
+                    <center><nav class="navbar">
+                        <a href="home.html" class="btn btn-info" role="button" style="border:rgb(72, 191, 215);">HOME</a>
+                        <a href="registration2.html" class="btn btn-info" role="button" style="border:rgb(72, 191, 215);">CREATE ACCOUNT</a>
+                        <a href="login1.html" class="btn btn-info" role="button" style="border:rgb(72, 191, 215);">LOGIN</a>
+                        <a href="index.html" class="btn btn-info" role="button" style="border:rgb(72, 191, 215);">PRODUCTS</a>
+                       <!--- <a href="home.html" class="btn btn-info" role="button" style="border:rgb(72, 191, 215);">OFFERS</a>-->
+                        <a href="contact1.html" class="btn btn-info" role="button" style="border:rgb(72, 191, 215)">CONTACT US</a>
+                    </nav></center></div>
+            </div>
+        
+        </header>
+        <form action="login1.html" align="center" onsubmit="return validate(this);">
+            <h1 style="color: black;">Registration Form</h1>
+            <hr>
+            <table align="center" style="background-color: rgb(179, 163, 76)">
+                <tr>
+                    <td>Username : </td>
+                    <td><input type="text" name="username" placeholder="Enter name"></td>
+                </tr>
+                <tr>
+                    <td>Password : </td>
+                    <td><input type="password" name="password" placeholder="Enter password"></td>
+                </tr>
+                <tr>
+                    <td>Email : </td>
+                    <td><input type="email" placeholder="Enter your mail" name="mail" id="myself" list="mymail">
+                        <datalist id="mymail">
+                            <option value="pushpa@gmai.com"></option>
+                            <option value="kakarlapushpa@gmail.com"></option>
+                            <option value="pushpakakarla4@gmail.com"></option>
+                        </datalist></td>
+                </tr>
+                <tr>
+                    <td>Age : </td>
+                    <td><input type="number" placeholder="Enter Age" min="10" max="50" name="age" ></td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Gender : </td>
+                    <td><input type="radio" name="gender">Male</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="gender">Female</td>
+                </tr>
+                <tr>
+                    <td>MobileNumber : </td>
+                    <td><input type="tel" name="mymobile" pattern="[0-9]{10}" title="10 digit mobile number" placeholder="Enter MobileNumber" ></td>
+                </tr>
+                <tr>
+                    <td>Address : </td>
+                    <td><textarea placeholder="Enter your Address" name="add"></textarea></td>
+                </tr>
+            </table>
+            <input style="color: black;" type="submit">
+            <input style="color: black;" type="reset">
+        </form>
+    </body>
+</html>
