@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+   
+    .header-2{
+        background-color: lightskyblue;
+        height: 75px;
+    }
+   .s{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+   }
+   .s .image{
+    flex:1 1 40rem;
+    padding-top: 5rem;
+   }
+   .s .image img{
+    width: 40%;
+    height: 20%;
+   }
+   .s.image.content{
+    flex:1 1 40rem;
+   }
+   .s .content span{
+  font-size: 3rem;
+  color:#666;
+}
+ .content h3{
+  font-size: 5rem;
+  color:var(--black);
+}
+   </style>
+<title>Bootstrap Example</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <body style="background: url(istockphoto-1560142923-2048x2048.jpg); background-size: cover;" >
+        
+      <div class="header-1">
+       
+        <p><h1  align="center" style="color: rgb(114, 95, 160)"><strong>E-Commernce website</strong></h1></p>
+        <form align="right" action="" class="search-box-container">
+            <input type="search" id="search-box" placeholder="Search Here...">
+            <label for="search-box" class="fas fa-bars"></label>
+        </form>
+      </div><br>
+<div class="header-2" style="color: black;">
+    <br>
+    <div id="menu" class="fas fa-bars" style="color: blanchedalmond;">
+    <center><nav class="navbar">
+        <a href="home.html" class="btn btn-info" role="button" style="border:rgb(72, 191, 215);">HOME</a>
+        <a href="registration2.html" class="btn btn-info" role="button" style="border:rgb(72, 191, 215);">CREATE ACCOUNT</a>
+        <a href="login1.html" class="btn btn-info" role="button" style="border:rgb(72, 191, 215);">LOGIN</a>
+        <a href="index.html" class="btn btn-info" role="button" style="border:rgb(72, 191, 215);">PRODUCTS</a>
+       <!--- <a href="home.html" class="btn btn-info" role="button" style="border:rgb(72, 191, 215);">OFFERS</a>-->
+        <a href="contact1.html" class="btn btn-info" role="button" style="border:rgb(72, 191, 215)">CONTACT US</a>
+    </nav></center></div>
+</div>
