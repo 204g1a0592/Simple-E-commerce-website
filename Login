@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>
+            Login page
+        </title>
+        <link rel="stylesheet" href="style.css">
+           <script>
+             function validate(form)
+           {
+               var username=form.user.value;
+               var password=form.pass.value;
+               if(username.length===0)
+               {
+                   alert("You must have enter a valid Username");
+                   return false;
+               }
+               if(password.length===0)
+               {
+                   alert("You must have enter a valid password");
+                   return false;
+               }
+            }
+           </script>
+    </head>
+    <body style="background: url(online-fashion-shopping-with-computer.jpg); background-size: cover;">
+        <form align="center" action="sucess.html" onsubmit="return validate(this);">
+            <h1 style="color: purple;">Login Page</h1>
+            UserName: <input type="text" name="user" placeholder="Enter name"><br><br>
+            PassWord: <input type="password" name="pass" placeholder="Enter password"><br><br>
+            <input type="submit">
+        </form>
+        <table align="center">
+       <tr> <h3 align="center">Don't have account</h3></tr>
+       <tr><a href="registration2.html">Sign up</a></tr>
+        </table>
+    </body>
+</html>
