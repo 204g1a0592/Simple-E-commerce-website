@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Contact</title>
+        <style>
+            .header-2{
+        background-color: lightskyblue;
+        height: 75px;
+        }
+        </style>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <style>
+            body{
+                background-image: url("c:\Users\HP\Documents\do.jpg");
+            }
+        </style>
+    </head>
+    <body style="background: url(3d-illustration-smartphone-with-products-coming-out-screen-online-shopping-e-commerce-concept.jpg); background-size: cover;">
+        <header>
+            <div class="header-2">
+                <div id="menu" class="fas fa-bars" style="color: blanchedalmond;">
+                    <center><nav class="navbar">
+                        <a href="home.html" class="btn btn-info" role="button" style="border:rgb(72, 191, 215);">HOME</a>
+                        <a href="registration2.html" class="btn btn-info" role="button" style="border:rgb(72, 191, 215);">CREATE ACCOUNT</a>
+                        <a href="login1.html" class="btn btn-info" role="button" style="border:rgb(72, 191, 215);">LOGIN</a>
+                        <a href="index.html" class="btn btn-info" role="button" style="border:rgb(72, 191, 215);">PRODUCTS</a>
+                       <!--- <a href="home.html" class="btn btn-info" role="button" style="border:rgb(72, 191, 215);">OFFERS</a>-->
+                        <a href="contact1.html" class="btn btn-info" role="button" style="border:rgb(72, 191, 215)">CONTACT US</a>
+                    </nav></center></div>
+            </div>
+        
+        </header>
+        <h1 align="center" style="color: purple;">Contact Us</h1>
+        <form action="#" align="center" >
+            <div class="container">
+            <table align="left">
+                <tr>
+                    <th>FullName : </th>
+                    <td><input type="text" placeholder="Enter Your name"></td>
+                </tr>
+                <tr>
+                    <th>PhoneNumber : </th>
+                    <td><input type="tel" pattern="[0-9]{10}" placeholder="Enter number" title="10 digit mobile number"></td>
+                </tr>
+                <tr>
+                    <th>Email : </th>
+                    <td><input type="email" placeholder="Enter mail"></td>
+                </tr>
+                <tr>
+                    <th>Message : </th>
+                    <td><textarea placeholder="Message"></textarea></td>
+                </tr>
+            </table>
+        </div>
+        <input type="submit">
+        </form>
+    </body>
+</html>
